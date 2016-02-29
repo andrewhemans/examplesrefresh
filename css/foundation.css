@@ -78,6 +78,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   width: 22px;
 }
 
+
+#frameworkRow {
+  padding-bottom: 60px;
+}
+
+/*#imageRow {
+  width: 200px;
+  margin: 0 auto;
+}*/
+
 .site-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -91,6 +101,8 @@ footer {
 .main {
   max-width: 960px;
   margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .example-icon {
   float: left;
@@ -128,7 +140,7 @@ footer {
 }
 
 #heroText {
-  padding-left: 30px;
+  padding-left: 15px;
 }
 
 #heroContainer {
@@ -142,12 +154,20 @@ footer {
   vertical-align: middle;
 }
 
+#heroImage {
+  float: right;
+}
+
 @media screen and (max-width: 39.9375em) {
   #heroLogo {
     padding-bottom: 30px;
   }
 .heroContent {
   padding-top: 30px;
+}
+
+#frameworkRow {
+  padding-bottom: 30px;
 }
 
 }
@@ -2503,7 +2523,9 @@ h1 {
   font-weight: 300;
 }
 h2 {
-  font-size: 1.25rem;
+  font-size: 2rem;
+  color: #025B80;
+  font-weight: 400;
 }
 h3 {
   font-size: 1rem;
@@ -2522,7 +2544,7 @@ h6 {
     font-size: 3rem;
   }
   h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   h3 {
     font-size: 16px;
