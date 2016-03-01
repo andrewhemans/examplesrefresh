@@ -48,16 +48,13 @@ body {
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
-
 .top-bar-left ul {
   max-height: 54px;
 }
-
 .top-bar-left a {
   max-height: 54px;
   padding: none;
 }
-
 #logo {
   /*padding-left: 30px;*/
   height: 32px;
@@ -65,7 +62,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   vertical-align: middle;
   line-height: 32px;
 }
-
 #title-bar-logo {
   padding-right: 10px;
   height: 24px;
@@ -73,21 +69,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   vertical-align: middle;
   line-height: 32px;
 }
-
 #social {
   width: 22px;
 }
-
-
 #frameworkRow {
   padding-bottom: 60px;
 }
-
-/*#imageRow {
-  width: 200px;
-  margin: 0 auto;
-}*/
-
 .site-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -114,7 +101,7 @@ footer {
   -moz-border-radius: 50px;
   -webkit-border-radius: 50px;
   border-radius: 50px;
-  margin-bottom: 10px;
+  margin-bottom: 32px;
   font-family: 'Sencha-Examples';
   font-size: 2.5rem;
   text-align: center;
@@ -125,12 +112,13 @@ footer {
   text-transform: none;
   -webkit-font-smoothing: antialiased;
   line-height: 4.65rem;
+  transition: background-color 1s ease-out;
 }
 .example-icon:hover {
   background-color: #025B80;
 }
 .example-items {
-  min-height: 105px;
+  min-height: 130px;
 }
 .heroContent {
   min-height: 320px;
@@ -138,41 +126,32 @@ footer {
   margin: 0 auto;
   padding-top: 60px;
 }
-
 #heroText {
   padding-left: 15px;
 }
-
 #heroContainer {
   background: #f5f5f5;
 }
-
 #heroLogo {
   max-height: 200px;
   margin: 0 auto!important;
   display: block;
   vertical-align: middle;
 }
-
 #heroImage {
   float: right;
 }
-
 @media screen and (max-width: 39.9375em) {
   #heroLogo {
     padding-bottom: 30px;
   }
-.heroContent {
-  padding-top: 30px;
+  .heroContent {
+    padding-top: 30px;
+  }
+  #frameworkRow {
+    padding-bottom: 30px;
+  }
 }
-
-#frameworkRow {
-  padding-bottom: 30px;
-}
-
-}
-
-
 
 /* Sencha Font for example icons */
 
@@ -2565,6 +2544,7 @@ a {
   line-height: inherit;
   cursor: pointer;
   font-weight: normal;
+  transition: color 1s ease-out;
 }
 a:hover, a:focus {
   color: #025B80;
@@ -3815,7 +3795,6 @@ select[multiple] {
   padding: 1rem 1rem;
   line-height: 1;
 }
-
 ul.footer-menu {
   margin: 0;
 }
