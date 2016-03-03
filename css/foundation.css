@@ -91,6 +91,8 @@ footer {
   padding-top: 30px;
   padding-bottom: 30px;
 }
+
+
 .example-icon {
   float: left;
   width: 75px;
@@ -112,7 +114,7 @@ footer {
   text-transform: none;
   -webkit-font-smoothing: antialiased;
   line-height: 4.65rem;
-  transition: background-color 1s ease-out;
+  transition: background-color .25s ease-out;
 }
 .example-icon:hover {
   background-color: #025B80;
@@ -2544,7 +2546,7 @@ a {
   line-height: inherit;
   cursor: pointer;
   font-weight: normal;
-  transition: color 1s ease-out;
+  transition: color .25s ease-out;
 }
 a:hover, a:focus {
   color: #025B80;
