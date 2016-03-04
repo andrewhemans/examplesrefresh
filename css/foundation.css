@@ -48,16 +48,13 @@ body {
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
-
 .top-bar-left ul {
   max-height: 54px;
 }
-
 .top-bar-left a {
   max-height: 54px;
   padding: none;
 }
-
 #logo {
   /*padding-left: 30px;*/
   height: 32px;
@@ -65,7 +62,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   vertical-align: middle;
   line-height: 32px;
 }
-
 #title-bar-logo {
   padding-right: 10px;
   height: 24px;
@@ -73,11 +69,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   vertical-align: middle;
   line-height: 32px;
 }
-
 #social {
   width: 22px;
 }
-
+#frameworkRow {
+  padding-bottom: 60px;
+}
 .site-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -91,7 +88,11 @@ footer {
 .main {
   max-width: 960px;
   margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
+
+
 .example-icon {
   float: left;
   width: 75px;
@@ -102,7 +103,7 @@ footer {
   -moz-border-radius: 50px;
   -webkit-border-radius: 50px;
   border-radius: 50px;
-  margin-bottom: 10px;
+  margin-bottom: 32px;
   font-family: 'Sencha-Examples';
   font-size: 2.5rem;
   text-align: center;
@@ -113,12 +114,18 @@ footer {
   text-transform: none;
   -webkit-font-smoothing: antialiased;
   line-height: 4.65rem;
+  transition: background-color .25s ease-out;
 }
+
+.icon-keyboard {
+  margin-bottom: 60px;
+}
+
 .example-icon:hover {
   background-color: #025B80;
 }
 .example-items {
-  min-height: 105px;
+  min-height: 130px;
 }
 .heroContent {
   min-height: 320px;
@@ -126,33 +133,32 @@ footer {
   margin: 0 auto;
   padding-top: 60px;
 }
-
 #heroText {
-  padding-left: 30px;
+  padding-left: 15px;
 }
-
 #heroContainer {
   background: #f5f5f5;
 }
-
 #heroLogo {
   max-height: 200px;
   margin: 0 auto!important;
   display: block;
   vertical-align: middle;
 }
-
+#heroImage {
+  float: right;
+}
 @media screen and (max-width: 39.9375em) {
   #heroLogo {
     padding-bottom: 30px;
   }
-.heroContent {
-  padding-top: 30px;
+  .heroContent {
+    padding-top: 30px;
+  }
+  #frameworkRow {
+    padding-bottom: 30px;
+  }
 }
-
-}
-
-
 
 /* Sencha Font for example icons */
 
@@ -1191,7 +1197,7 @@ dfn {
    */
 
 h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
   margin: 0.67em 0;
 }
 
@@ -2503,7 +2509,9 @@ h1 {
   font-weight: 300;
 }
 h2 {
-  font-size: 1.25rem;
+  font-size: 2rem;
+  color: #025B80;
+  font-weight: 400;
 }
 h3 {
   font-size: 1rem;
@@ -2522,7 +2530,7 @@ h6 {
     font-size: 3rem;
   }
   h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   h3 {
     font-size: 16px;
@@ -2543,6 +2551,7 @@ a {
   line-height: inherit;
   cursor: pointer;
   font-weight: normal;
+  transition: color .25s ease-out;
 }
 a:hover, a:focus {
   color: #025B80;
@@ -3225,6 +3234,7 @@ select[multiple] {
   border-bottom: 0;
   border-radius: 0;
   margin-left: 0;
+  margin-bottom: 0;
 }
 .accordion-title {
   display: block;
@@ -3234,11 +3244,21 @@ select[multiple] {
   font-weight: 700;
   color: #014D6C;
   position: relative;
-  border-bottom: 4px solid #f5f5f5;
+  border-top: 4px solid #f5f5f5;
 }
-.is-active > .accordion-title {
+
+.first-accordion {
+  border-top: none;
+}
+
+.last-accordion {
+  border-top: 4px solid #f5f5f5;
+}
+
+/*.is-active > .accordion-title {
   border: 0;
-}
+}*/
+
 .accordion-title:hover, .accordion-title:focus {
   background-color: #fff;
   color: #024059;
@@ -3259,9 +3279,10 @@ select[multiple] {
 .accordion-content {
   padding: 1rem;
   display: none;
-  border-bottom: 4px solid #f5f5f5;
+  /*border-bottom: 4px solid #f5f5f5;*/
   background-color: #fefefe;
 }
+
 .is-accordion-submenu-parent > a {
   position: relative;
 }
@@ -3793,7 +3814,6 @@ select[multiple] {
   padding: 1rem 1rem;
   line-height: 1;
 }
-
 ul.footer-menu {
   margin: 0;
 }
