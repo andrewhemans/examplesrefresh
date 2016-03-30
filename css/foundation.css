@@ -56,6 +56,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   max-height: 54px;
   padding: none;
 }
+
+nav *:focus,
+.top-bar-right *:focus,
+.top-bar-left *:focus,
+.dropdown.menu *:focus{
+    outline:none;
+}
+
 #logo {
   /*padding-left: 30px;*/
   /*height: 32px;*/
@@ -157,6 +165,8 @@ footer {
 }
 #heroContainer {
   background: #f5f5f5;
+  background-image: url("../img/hero-bg.jpg");
+  background-size: cover;
 }
 #heroLogo {
   max-height: 200px;
@@ -1851,15 +1861,15 @@ p + .stat {
   padding: 0.85em 1em;
   margin: 0 0 1rem 0;
   font-size: 0.9rem;
-  background-color: #2199e8;
-  color: #fff;
+  background-color: #fff;
+  color: ##2199e8;
 }
 [data-whatinput='mouse'] .button {
   outline: 0;
 }
 .button:hover, .button:focus {
-  background-color: #1583cc;
-  color: #fff;
+  background-color: #fff;
+  color: #2199e8;
 }
 .button.tiny {
   font-size: 0.6rem;
@@ -1986,6 +1996,7 @@ p + .stat {
   float: right;
   margin-left: 1em;
   display: inline-block;
+
 }
 .button.arrow-only::after {
   margin-left: 0;
@@ -2673,10 +2684,12 @@ select[multiple] {
   position: absolute;
   visibility: hidden;
   width: 300px;
-  z-index: 10;
+  z-index: 100;
+
 }
 .dropdown-pane.is-open {
   visibility: visible;
+
 }
 .dropdown-pane.tiny {
   width: 100px;
@@ -2718,7 +2731,7 @@ select[multiple] {
 }
 .is-dropdown-submenu-parent a::after {
   float: right;
-  margin-top: 3px;
+  margin-top: 13px;
   margin-left: 10px;
 }
 .is-dropdown-submenu-parent.is-down-arrow a {
@@ -2779,12 +2792,14 @@ select[multiple] {
 .is-dropdown-submenu {
   display: none;
   position: absolute;
-  top: 0;
-  left: 100%;
+  top: 53px;
+  left: 10%;
   min-width: 200px;
   z-index: 1;
   background: #fefefe;
   border: 1px solid #cacaca;
+  line-height: 2.5rem;
+
 }
 .is-dropdown-submenu .is-dropdown-submenu {
   margin-top: -1px;
