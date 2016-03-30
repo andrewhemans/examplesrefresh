@@ -58,11 +58,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 #logo {
   /*padding-left: 30px;*/
-  height: 32px;
+  /*height: 32px;*/
   margin: 0 auto;
   vertical-align: middle;
   line-height: 32px;
 }
+
 #title-bar-logo {
   padding-right: 10px;
   height: 24px;
@@ -70,9 +71,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   vertical-align: middle;
   line-height: 32px;
 }
-#social {
-  width: 22px;
+
+
+i.fa {
+  font-size: 28px!important;
+  color: #DADADA;
+  transition: color .25s ease-out;
 }
+
+i.fa:hover {
+  color: #a3a3a3;
+}
+
 #frameworkRow {
   padding-bottom: 60px;
 }
@@ -86,6 +96,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 footer {
   border-top: 1px solid #DADADA;
 }
+
+#footer-link {
+  font-size: .5rem;
+  font-weight: 400;
+  padding-right: none;
+  padding-left: none;
+}
+
 .main {
   max-width: 960px;
   margin: 0 auto;
@@ -104,7 +122,7 @@ footer {
   -moz-border-radius: 50px;
   -webkit-border-radius: 50px;
   border-radius: 50px;
-  margin-bottom: 32px;
+  margin-bottom: 40px;
   font-family: 'Sencha-Examples';
   font-size: 2.5rem;
   text-align: center;
@@ -126,7 +144,7 @@ footer {
   background-color: #025B80;
 }
 .example-items {
-  min-height: 130px;
+  min-height: 140px;
 }
 .heroContent {
   min-height: 320px;
@@ -156,6 +174,11 @@ footer {
   .heroContent {
     padding-top: 30px;
   }
+
+  .example-items {
+    min-height: 100px;
+  }
+
   #frameworkRow {
     padding-bottom: 30px;
   }
@@ -2265,6 +2288,7 @@ select[multiple] {
 }
 .float-right {
   float: right !important;
+  margin-bottom: 2px;
 }
 .float-center {
   display: block;
@@ -2866,14 +2890,21 @@ select[multiple] {
   line-height: 1;
 }
 ul.footer-menu {
-  margin: 0;
+  margin-left: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
+
 .footer-text {
   vertical-align: middle;
   display: inline-block;
   padding: 1rem 1rem;
-  line-height: 1;
+  line-height: 1.5;
+  font-size: .80rem;
+  text-align: right;
 }
+
+
 [data-whatinput='mouse'] .menu > li {
   outline: 0;
 }
@@ -3850,13 +3881,14 @@ table.hover tr:nth-of-type(even):hover {
   transform: translateY(-50%);
 }
 .top-bar {
-  padding: 20px;
+  padding: none;
   border-style: solid;
   border-width: thin;
   border-top: none;
   border-left: none;
   border-right: none;
   border-color: #e6e6e6;
+  height: 76px;
 }
 .top-bar::before, .top-bar::after {
   content: ' ';
@@ -3929,6 +3961,7 @@ table.hover tr:nth-of-type(even):hover {
 }
 .top-bar-right {
   float: right;
+  padding: 22px;
 }
 
 /*# sourceMappingURL=foundation.css.map */
