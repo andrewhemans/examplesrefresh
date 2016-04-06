@@ -195,6 +195,7 @@ footer {
 }
 
 
+
 /**
    * 1. Correct `inline-block` display not defined in IE 8/9.
    * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
@@ -2208,6 +2209,7 @@ select[multiple] {
   .hide-for-small-only {
     display: none !important;
   }
+
 }
 @media screen and (max-width: 0em), screen and (min-width: 40em) {
   .show-for-small-only {
@@ -2728,7 +2730,14 @@ select[multiple] {
 }
 .is-dropdown-submenu-parent {
   position: relative;
+  border-bottom: #0A8CC6 4px solid;
+
 }
+
+.no-dropdown {
+  padding-bottom: 27px!important;
+}
+
 .is-dropdown-submenu-parent a::after {
   float: right;
   margin-top: 13px;
@@ -2737,6 +2746,7 @@ select[multiple] {
 .is-dropdown-submenu-parent.is-down-arrow a {
   padding-right: 1.5rem;
   position: relative;
+
 }
 .is-dropdown-submenu-parent.is-down-arrow > a::after {
   content: '';
@@ -2793,14 +2803,20 @@ select[multiple] {
   display: none;
   position: absolute;
   top: 53px;
-  left: 10%;
+  left: 0;
   min-width: 200px;
   z-index: 1;
   background: #fefefe;
   border: 1px solid #cacaca;
-  line-height: 2.5rem;
+  line-height: 0rem;
+  padding-top: 15px;
 
 }
+
+.is-submenu-item{
+  padding-bottom: 0;
+}
+
 .is-dropdown-submenu .is-dropdown-submenu {
   margin-top: -1px;
 }
@@ -2897,6 +2913,7 @@ select[multiple] {
 .menu > li {
   display: table-cell;
   vertical-align: middle;
+  padding-bottom: 24px;
 }
 .footer-menu > li {
   vertical-align: middle;
