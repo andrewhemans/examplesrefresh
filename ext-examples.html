@@ -21,46 +21,42 @@
 </head>
 
 <body>
-  <div class="site-container">
-    <div class="title-bar" data-responsive-toggle="examplesMenu" data-hide-for="small" data-responsivetoggle="ux7d2z-responsivetoggle" style="display: none;">
-      <button class="menu-icon" type="button" data-toggle=""></button>
-      <div class="title-bar-title">Menu</div>
-      <div class="title-bar-right">
-        <a href="https://www.sencha.com/"><img id="title-bar-logo" src="img/logo2x.png" /></a>
+  <div class="header-container">
+    <div class="site-container">
+      <div class="title-bar" data-responsive-toggle="examplesMenu" data-hide-for="small" data-responsivetoggle="ux7d2z-responsivetoggle" style="display: none;">
+        <button class="menu-icon" type="button" data-toggle=""></button>
+        <div class="title-bar-title">Menu</div>
+        <div class="title-bar-right">
+          <a href="https://www.sencha.com/"><img id="title-bar-logo" src="img/logo2x.png" /></a>
+        </div>
       </div>
-    </div>
-    <div class="top-bar" id="examplesMenu" style="display: block;">
-
-      <div class="top-bar-left">
-        <ul class="menu " data-responsive-menu="accordion" data-responsivemenu="01pfoj-responsivemenu">
-          <li class="menu-text" role="menuitem">
-            <a href="https://www.sencha.com/"><img id="logo" src="img/logo.svg" /></a>
-          </li>
+      <div class="top-bar" id="examplesMenu" style="display: block;">
+        <div class="top-bar-left">
+          <ul class="menu " data-responsive-menu="accordion" data-responsivemenu="01pfoj-responsivemenu">
+            <li class="menu-text" role="menuitem">
+              <a href="https://www.sencha.com/"><img id="logo" src="img/logo.svg" /></a>
+            </li>
           </ul>
-
-
+        </div>
+        <div class="top-bar-right">
+          <ul class="menu dropdown-menu" data-dropdown-menu="n79jiy-dropdown-menu">
+            <li><a href="#">Version</a>
+              <ul class="menu">
+                <li><a href="6.0.1/index.html">Ext JS 6.0.1</a></li>
+                <li><a href="#">Ext JS 6.0.0</a></li>
+                <li><a href="#">Ext JS 5.1.2</a></li>
+                <li><a href="#">Ext JS 5.1.1</a></li>
+                <li><a href="#">Ext JS 5.1.0</a></li>
+                <li><a href="#">Ext JS 5.0.1</a></li>
+                <li><a href="#">Ext JS 5.0.0</a></li>
+              </ul>
+            </li>
+            <li class="no-dropdown"><a href="http://docs.sencha.com/">Docs</a></li>
+            <li class="no-dropdown"><a href="https://www.sencha.com/support/">Support</a></li>
+            <li class="no-dropdown"><a href="https://www.sencha.com/forum/">Forum</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="top-bar-right">
-        <ul class="menu dropdown-menu" data-dropdown-menu="n79jiy-dropdown-menu">
-          <li><a href="#">Version</a>
-            <ul class="menu">
-              <li><a href="6.0.1/index.html">Ext JS 6.0.1</a></li>
-              <li><a href="#">Ext JS 6.0.0</a></li>
-              <li><a href="#">Ext JS 5.1.2</a></li>
-              <li><a href="#">Ext JS 5.1.1</a></li>
-              <li><a href="#">Ext JS 5.1.0</a></li>
-              <li><a href="#">Ext JS 5.0.1</a></li>
-              <li><a href="#">Ext JS 5.0.0</a></li>
-            </ul>
-          </li>
-          <li class="no-dropdown"><a href="http://docs.sencha.com/">Docs</a></li>
-          <li class="no-dropdown"><a href="https://www.sencha.com/support/">Support</a></li>
-          <li class="no-dropdown"><a href="https://www.sencha.com/forum/">Forum</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="row">
       <div class="column row" id="heroContainer">
         <div class="heroContent">
           <div class="column row">
@@ -73,9 +69,10 @@
             </div>
           </div>
         </div>
-
       </div>
-
+    </div>
+  </div>
+  <div class="row">
       <div class="main">
 
 
@@ -1006,6 +1003,7 @@
           </div>
         </div>
       </div>
+      </div>
       <div id="footer">
         <footer>
           <div class="row">
@@ -1039,7 +1037,7 @@
           </div>
         </footer>
       </div>
-    </div>
+
     <script src="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
     <script>
       $(document).foundation();
