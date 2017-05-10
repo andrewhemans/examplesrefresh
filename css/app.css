@@ -11,8 +11,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.column, .columns {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .header-container {
   background-color: #024059;
+  padding-top: 24px;
 }
 
 .top-bar {
@@ -25,6 +31,21 @@ body {
   color: #fff;
 }
 
+.menu > li > a {
+    padding: 1.2rem 1rem;
+    line-height: 1;
+    color: #fff;
+    text-decoration: none;
+    line-height: inherit;
+    cursor: pointer;
+    font-weight: bold;
+    transition: opacity .25s ease-out;
+}
+
+.menu > li > a:hover {
+    opacity: .75;
+}
+
 footer {
   background-color: #024059;
   border: none;
@@ -33,19 +54,45 @@ footer {
   background-size: cover;
 }
 
+.footer-menu > li {
+  vertical-align: middle;
+  display: inline-block;
+  padding: 1rem 1rem;
+  line-height: 1;
+}
+
 #logo {
-  margin: 0 auto;
+  /*margin: 0 auto;*/
   vertical-align: middle;
   line-height: 32px;
   width: 204px;
+  margin-left: -60px;
+}
+
+.title-bar {
+  background: #024059;
+  color: #fefefe;
+  padding: .5rem;
 }
 
 #title-bar-logo {
   padding-right: 10px;
-  height: 24px;
+  height: 64px;
   margin: 0 auto;
   vertical-align: middle;
   line-height: 32px;
+}
+
+.menu-icon {
+  padding: 1rem;
+  width: 28px;
+  height: 20px;
+}
+
+.title-bar .menu-icon {
+    margin-left: 0.25rem;
+    margin-right: 1rem;
+    margin-top: 1.5rem;
 }
 
 
@@ -63,7 +110,7 @@ i.fa:hover {
   padding-bottom: 60px;
 }
 .site-container {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
   z-index: 0;
   border-top: none;
@@ -123,12 +170,12 @@ footer {
   min-height: 140px;
 }
 .heroContent {
-  min-height: 500px;
+  min-height: 460px;
   margin: 0 auto;
   padding-top: 60px;
 }
 #heroText {
-  padding-left: 15px;
+  /*padding-left: 15px;*/
   color: #fff;
 }
 
@@ -165,5 +212,17 @@ footer {
 
   #frameworkRow {
     padding-bottom: 30px;
+  }
+
+  .footer-menu > li {
+    padding: 1rem .5rem;
+  }
+
+  i.fa {
+    font-size: 22px!important;
+  }
+
+  .header-container {
+    padding-top: 0;
   }
 }
