@@ -2,8 +2,8 @@
   font-family: 'sencha-examples';
   src:  url('../fonts/sencha-examples.eot?jozxbb');
   src:  url('../fonts/sencha-examples.eot?jozxbb#iefix') format('embedded-opentype'),
-    url('../fonts/sencha-examples.ttf?jozxbb') format('truetype'),
-    url('../fonts/sencha-examples.woff?jozxbb') format('woff'),
+    url('../fonts/sencha-examples.ttf') format('truetype'),
+    url('../fonts/sencha-examples.woff') format('woff'),
     url('../fonts/sencha-examples.svg?jozxbb#sencha-examples') format('svg');
   font-weight: normal;
   font-style: normal;
