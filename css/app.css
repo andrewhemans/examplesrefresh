@@ -2,7 +2,7 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: "Effra", Helvetica, Open-Sans, Arial, sans-serif;
+  font-family: "Effra", "Roboto", Helvetica, "Open-Sans", Arial, sans-serif;
   font-weight: 300;
   line-height: 1.5;
   color: #323232;
@@ -40,6 +40,14 @@ body {
     cursor: pointer;
     font-weight: bold;
     transition: opacity .25s ease-out;
+}
+
+.version-dropdown > li > a {
+
+  color: #0A8CC6;
+  line-height: 1;
+  font-weight: normal;
+
 }
 
 .menu > li > a:hover {
@@ -146,7 +154,7 @@ footer {
   -webkit-border-radius: 50px;
   border-radius: 50px;
   margin-bottom: 40px;
-  font-family: 'Sencha-Examples';
+  font-family: 'sencha-examples';
   font-size: 2.5rem;
   text-align: center;
   speak: none;
@@ -157,6 +165,7 @@ footer {
   -webkit-font-smoothing: antialiased;
   line-height: 4.65rem;
   transition: background-color .25s ease-out;
+  padding-top: 16px;
 }
 
 .icon-keyboard {
